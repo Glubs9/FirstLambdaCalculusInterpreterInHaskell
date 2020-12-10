@@ -2,7 +2,7 @@
 This is the first successful lambda calculus interpreter I have written, and it was written in haskell.
 
 # Motivation
-I have been trying to write lambda calculus interpreters ever since I heard the concept but I always struggled with it and never got it working properly without loads of bugs but after reading through a thing on shift reduce parsing by mit I decided to give it an implementation (this was also the first time I had a proper look at a bottom up parser). After thinking about it for a while I thought that I could map the algorithm for shift reduce pretty much 1:1 on haskell's pattern matching and custom type system and so I decided to write it in haskell. After having written this I realise that this approach doesn't really work all that well but it was fun to do anyway.                 
+I have been trying to write lambda calculus interpreters ever since I heard the concept but I always struggled with it and never got it working properly without loads of bugs but after reading through a thing on shift reduce parsing by mit I decided to give it an implementation (this was also the first time I had a proper look at a bottom up parser). After thinking about it for a while I thought that I could map the algorithm for shift reduce pretty much 1:1 on haskell's pattern matching and custom type system and so I decided to write it in haskell. After having written this I realise that this approach doesn't really work all that well but it was fun to do anyway. This motivation leads to this implementation being very bare, just because I wanted it to work and didn't want to risk any extra features just in case it didn't work.                               
 
 # Usage
 download all the files onto your local machine. Then compile Main.hs (I only tested compilation using ghc so it may not work on other compilers).                    
@@ -13,6 +13,7 @@ variables are written as one character from the alphabet, uppercase or lowercase
 abstraction is written as follows: / Variable . Expression                  
 Application has to be specified using a \*. ie: Expression \* Expression                  
 Brackets () exist and work in much the same way as any other infix system.                       
+There are no comments as I couldn't be bothered.                     
 
 # important notes
 abstraction has higher precedence then application in this interpreter so /a.a\*a will parse as (/a.a)\*a                              
