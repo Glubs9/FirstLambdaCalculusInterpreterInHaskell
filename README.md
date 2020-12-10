@@ -11,7 +11,8 @@ The input is read using the function getContents and then ran through the interp
 # Syntax
 variables are written as one character from the alphabet, uppercase or lowercase.                   
 abstraction is written as follows: / Variable . Expression                  
-Application has to be specified using a \*. ie: Expression \* Expression                       
+Application has to be specified using a \*. ie: Expression \* Expression                  
+Brackets () exist and work in much the same way as any other infix system.                       
 
 # important notes
 abstraction has higher precedence then application in this interpreter so /a.a\*a will parse as (/a.a)\*a                              
