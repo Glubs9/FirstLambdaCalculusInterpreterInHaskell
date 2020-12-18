@@ -21,3 +21,6 @@ there is an included program (test.lc) which is an example of adding two numbers
 if there is an error in the syntax of the lambda calculus statement the program will crash with the error non-exhaustive patterns in function.                
 if you accidentally run the program without giving it a file in stdin you can enter lambda calculus through the terminal but enter will not exit the function and you need to press CTRL+d to exit the program.                       
 For ease of lexing variable names are only one character long, this could be fairly easily changed but tbh i can't be bothered rn.                     
+
+# Compile to SKI
+I have recently added the algorithm to convert a lambda calculus statement to ski calculus. I stole this algorithm from wikipedia from https://en.wikipedia.org/wiki/Combinatory_logic. To make use of this compile MainCompile.hs rather than Main.hs . After doing this ./MainCompile will be able to be used in much the same way as ./Main Except instead of a reduced lambda calculus output it will output a string of SKI. The output of this has not been tested but it matches the examples in wikipedia (though the output of this program has far more brackets due to lack of effort in the printing function). 
